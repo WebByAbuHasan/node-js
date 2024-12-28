@@ -3,14 +3,17 @@ const server = http.createServer(function(req, res) {
    if(req.url==="/"){
        res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
        res.write(`<h1>hello this is my fast program</h1>`)
+       res.end(`<h1>end</h1>`)
    }
     else if(req.url==="/about"){
        res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
        res.write(`<h1>hello this is my about program</h1>`)
+       res.end(`<h1>end</h1>`)
     }
    else if(req.url==="/contact"){
        res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
        res.write(`<h1>hello this is my contact program</h1>`)
+       res.end(`<h1>end</h1>`)
    }
 
 });
